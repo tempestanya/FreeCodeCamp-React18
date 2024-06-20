@@ -108,7 +108,7 @@ root.render(<Greeting/>);
 CTRL + C ---> stop the server
 NPM START ---> start the server
 ---------------------------------------------------------------------
-### ES7 snippets
+## ES7 snippets
 - rafce (arrow function with export)
 - rfce (regular function with export)
 - same as the file name

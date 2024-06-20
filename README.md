@@ -68,3 +68,50 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+------------------------------------------------------------------------
+
+### Typical Component
+function Greeting() {
+    return <h2>My First Component</h2>;
+}
+
+/* arrow function also works */
+const Greeting = () => {
+    return <h2>My First Component</h2>;
+}
+export default Greeting;
+
+    - starts with a cap letter
+    - must return JSX (html)
+    - always close tag  <Greeting/>
+    - JSX syntax (return html)
+        - to make our lives easier
+        - calling function under the hood
+
+   1. Create a function
+   2. Export it (ES6), Import stuff (React)
+
+REMEMBER:-----------------------------------------------------------
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+function Greeting() {
+    return <h2>My First Component</h2>;
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Greeting/>);
+---------------------------------------------------------------------
+CTRL + C ---> stop the server
+NPM START ---> start the server
+---------------------------------------------------------------------
+### ES7 snippets
+- rafce (arrow function with export)
+- rfce (regular function with export)
+- same as the file name
+- reat auto import
+    -uncheck
+    -React Snippets > Settings: Import React On Top

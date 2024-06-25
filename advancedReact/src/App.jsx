@@ -1,14 +1,11 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Starter from "./tutorial/11-performance/final/04-react-18";
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <h1>our first vite project</h1>
-  )
+    return (
+        <div className='container'>
+            <Starter />
+        </div>
+    );
 }
 
-export default App
+export default App;
